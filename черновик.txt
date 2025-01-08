@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="дом, фандом, роман, фансайт">
+    <meta name="description" content="Фандом дом, в котором...">
+    <link rel="stylesheet" href="Оформление.css"> 
+    <title>Дом, в котором...</title>
+</head>
+<body>
+    <header class="header">
+        <nav></nav><ul class="menu">
+            <li><a href="#">ченить</a></li>
+            <li><a href="#">ченить</a></li>
+        </ul></nav> 
+        <h1 class="header-title">
+            <div class="left">Фандом, посвященный роману</div>
+            <div class="right">Мариам Петросян "Дом, в котором..."</div>
+        </h1>
+    </header>
+       
+    <main>
+        <aside>Всё началось с красных кросовок.</aside>
+        <section><p>Привет, я основной контент! Живу только на этой странице.(р-разделение абзацев(параграфы)</p></section>
+        <section>Ну, там раздел какой-нибудь (глава 1, если бы была книга)</section>
+        <section class="image-slider">
+            <h2>Медицинская карта</h2>
+            <div class="slider">
+                <img src="dosie/0t163CyO5uI.jpg" alt="Изображение 1" class="active">
+                <img src="dosie/4do-kCzFlXw.jpg" alt="Изображение 2">
+                <img src="dosie/6qnKHc_L9pw.jpg" alt="Изображение 3">
+                <img src="dosie/AriPNPsn_eg.jpg" alt="Изображение 4">
+                <img src="dosie/BC4mSIB3Q6o.jpg" alt="Изображение 5">
+                <img src="dosie/c9cb7p76ukc.jpg" alt="Изображение 6">
+                <img src="dosie/c9cb7p76ukc.jpg" alt="Изображение 7">
+                <img src="dosie/dirMuiPIH7c.jpg" alt="Изображение 8">
+                <img src="dosie/eg3VNXzcYy0.jpg" alt="Изображение 9">
+                <img src="dosie/eWiIIu_Dkt4.jpg" alt="Изображение 10">
+                <img src="dosie/G54gk6rS-7Y.jpg" alt="Изображение 11">
+                <img src="dosie/iOtSs98Ya38.jpg" alt="Изображение 12">
+                <img src="dosie/IwaNR1NK1jw.jpg" alt="Изображение 13">
+                <img src="dosie/j73YM1vval4.jpg" alt="Изображение 14">
+                <img src="dosie/kgphrjmFikI.jpg" alt="Изображение 15">
+                <img src="dosie/LGX2vlRuvBY.jpg" alt="Изображение 16">
+                <img src="dosie/MIjwUGTpisE.jpg" alt="Изображение 17">
+                <img src="dosie/O7CSjePQdxk.jpg" alt="Изображение 18">
+                <img src="dosie/QRd0D-Fkxdo.jpg" alt="Изображение 19">
+                <img src="dosie/rNe169QL9Wg.jpg" alt="Изображение 20">
+                <img src="dosie/su6suECiBy8.jpg" alt="Изображение 21">
+                <img src="dosie/TUT56fLtyBY.jpg" alt="Изображение 22">
+                <img src="dosie/w0MJgzQP8HU.jpg" alt="Изображение 23">
+                <img src="dosie/wX3uwTbXh-Q.jpg" alt="Изображение 24">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </section>  
+        <script src="karta.js"></script>      
+        <article>
+            Я фотка в Инстаграме, смотрюсь отлично где угодно
+        </article>
+        <aside>
+            Здесь могла быть ваша реклама
+        </aside>
+    </main>
+    
+    <footer class="footer">Подвал</footer>
+</body>
+</html>
+
+
+body, html {
+    margin: 0; /* Убираем отступы у body и html */
+    padding: 0; /* Убираем отступы у body и html */
+    width: 100%; /* Устанавливаем ширину на 100% */
+    height: 100%; /* Устанавливаем высоту на 100% */
+    overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+}
+.header {
+    background-image: url('k/fff.jpg');
+    background-size: cover; /* Масштабирует изображение, чтобы оно заполнило весь элемент */
+    background-position: center; /* Центрирует изображение */
+    height: 300px; /* Установите высоту шапки */
+    color: rgb(255, 255, 255); /* Цвет текста */
+    display: flex; /* Используем flexbox для центрирования содержимого */
+    flex-direction: column; /* Устанавливаем вертикальное направление для флекс-контейнера */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    padding: 0 0px; /* Добавляем отступы по бокам */
+    position: relative; /* Устанавливаем позиционирование относительно родителя */
+    width: 100%; /* Устанавливаем ширину на 100% */
+    box-sizing: border-box; /* Учитываем отступы и границы в ширине и высоте */
+}
+.header-title {
+    display: flex; /* Используем flexbox для заголовка */
+    width: 100%; /* Занимает всю ширину */
+    margin-top: auto; /* Отодвигаем заголовок вниз */
+    justify-content: space-between; /* Распределяем пространство между элементами заголовка */
+    background: linear-gradient(90deg, #85dfee, #de5454); /* Градиентный фон */
+    -webkit-background-clip: text; /* Обрезка фона под текст */
+    -webkit-text-fill-color: transparent; /* Делаем цвет текста прозрачным */
+    font-size: 1.6em; /* Размер шрифта */
+    font-weight: bold; /* Жирный текст */
+}
+.left {
+    text-align: left; /* Выравнивание текста влево */
+    flex: 1; /* Занимает всю доступную ширину */
+}
+.right {
+    text-align: right; /* Выравнивание текста вправо */
+    flex: 1; /* Занимает всю доступную ширину */
+}
+body {
+    margin: 0; /* Убираем отступы по умолчанию */
+    background-color: rgb(170 205 210);
+}
+.menu {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 5px 0; /* Убираем внутренние отступы */
+    margin: 0; /* Убираем внешние отступы */
+    display: flex; /* Используем Flexbox для горизонтального выравнивания */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    background-color: black; /* Фон меню */
+    position: fixed; /* Фиксируем меню в верхней части страницы */
+    width: 100%; /* Устанавливаем ширину на 90% от ширины окна */
+    z-index: 1000; /* Увеличиваем z-index, чтобы меню было на переднем плане */
+}
+.menu li {
+    margin: 0 15px; /* Отступы между пунктами меню */
+}
+.menu li a {
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    padding: 20px 20px; /* Внутренние отступы */
+    border-radius: 5px; /* Скругление углов */
+    transition: background-color 0.3s; /* Плавный переход при наведении */
+}
+.menu li a:hover {
+    background-color: #333; /* Темнее при наведении */
+}
+h1 {
+    margin: 0; /* Убираем отступы у заголовка */
+}
+
+.footer {
+    background-color: rgb(113 123 128); /* Фон меню */
+}
+.footer-body {
+    color: rgb(0, 0, 0); /* Текст будет синим */
+}
+aside {
+    background-color: #ab8e8e; /* Цвет фона для выделения */
+    color: #333; /* Цвет текста */
+    font-size: 1.5vw; /* Размер шрифта */
+    font-family: 'Arial', sans-serif; /* Шрифт */
+    padding: 20px; /* Внутренние отступы */
+    text-align: center; /* Выравнивание текста по центру */
+    border-radius: 10px; /* Скругление углов */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для эффекта */
+    margin: 5px auto; /* Отступы сверху и снизу и центрирование */
+    max-width: 600px; /* Максимальная ширина */
+}
+
+.image-slider {
+    position: relative;
+    max-width: 600px; /* Максимальная ширина секции */
+    margin: auto; /* Центрирование секции */
+    text-align: center; /* Центрирование текста */
+}
+.slider {
+    position: relative;
+    overflow: hidden; /* Скрытие лишних изображений */
+}
+.slider img {
+    width: 100%; /* Изображения занимают всю ширину секции */
+    display: none; /* Скрываем все изображения по умолчанию */
+    border: 5px solid rgb(112, 80, 80); /* Черная рамка вокруг изображений */
+    box-sizing: border-box; /* Учитываем рамку в общей ширине */
+}
+.slider img.active {
+    display: block; /* Показываем только активное изображение */
+}
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для кнопок */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+.prev {
+    left: 10px; /* Расположение кнопки "Назад" */
+}
+.next {
+    right: 10px; /* Расположение кнопки "Вперед" */
+}
+
+
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slider img');
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active'); // Удаляем класс active у всех изображений
+        if (i === index) {
+            slide.classList.add('active'); // Добавляем класс active только к текущему изображению
+        }
+    });
+}
+
+function changeSlide(direction) {
+    currentSlide += direction;
+    if (currentSlide < 0) {
+        currentSlide = slides.length - 1; // Если меньше 0, переходим к последнему изображению
+    } else if (currentSlide >= slides.length) {
+        currentSlide = 0; // Если больше последнего, переходим к первому изображению
+    }
+    showSlide(currentSlide);
+}
+
+// Показать первое изображение при загрузке
+showSlide(currentSlide);
